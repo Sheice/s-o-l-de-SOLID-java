@@ -1,5 +1,6 @@
-public class CocheComustible extends Coche{
+public class CocheComustible implements Coche, CocheConPuertas{
     private String tipo;
+    private int cantPuertas;
 
     @Override
     public void setTipoCoche(String tipo) {
@@ -9,5 +10,15 @@ public class CocheComustible extends Coche{
     @Override
     public String getTipoCoche() {
         return tipo;
+    }
+
+    @Override
+    public int getCantPuertas() {
+        return cantPuertas;
+    }
+
+    @Override
+    public void setCantPuertas(int cantPuertas) {
+        this.cantPuertas = cantPuertas;
     }
 }

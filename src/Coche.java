@@ -1,6 +1,5 @@
-abstract public class Coche {
+ public interface Coche {
+    void setTipoCoche(String tipo);
 
-    abstract public void setTipoCoche(String tipo);
-
-    abstract public String getTipoCoche();
+    String getTipoCoche();
 }
